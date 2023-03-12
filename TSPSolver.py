@@ -37,15 +37,6 @@ class stateHeap:
 
 		newStateNode.metric = newStateNode.cost / newStateNode.depth
 
-		# if c_d:
-		# 	naiveDecPts = len(str(naiveEst))
-		# 	stateDecPts = len(str(newStateNode.cost))
-		#
-		# 	if naiveDecPts < stateDecPts:
-		# 		newStateNode.metric = newStateNode.cost
-		# 	else:
-		# 		newStateNode.metric = newStateNode.depth + (newStateNode.cost * (10**-naiveDecPts))
-
 		# o(1) operations###
 		self.tree.append(newStateNode)  # add to tree
 
